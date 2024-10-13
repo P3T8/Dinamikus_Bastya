@@ -1,0 +1,51 @@
+body {
+    background-color: #CED5E0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%; /* Az oldal szélességének 90%-a, rugalmasan alkalmazkodik */
+    max-width: 800px; /* Maximum 800px széles lehet */
+    margin: 20px auto; /* Középre igazítás és távolság felül-alul */
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Finom árnyék, ami kiemeli a tartalmat */
+    border-radius: 10px; /* Lekerekített sarkok */
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 2rem; /* Rugalmas betűméret */
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%; /* A táblázat teljes szélességben nyúlik ki */
+    max-width: 600px; /* Maximum 600px széles */
+    margin: 0 auto; /* Középre igazított */
+    background-color: #CED5E0;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 1rem; /* A betűméret is rugalmas, a kijelző méretéhez igazodva */
+    border: 1px solid #000; /* Egyszerű, fekete szegély */
+}
+
+@media (max-width: 600px) {
+    td {
+        width: 40px; /* Kisebb képernyőkön csökkentjük a cellák méretét */
+        height: 40px;
+    }
+
+    .container h1 {
+        font-size: 1.5rem; /* Kisebb képernyőkön kisebb betűméret */
+    }
+}
